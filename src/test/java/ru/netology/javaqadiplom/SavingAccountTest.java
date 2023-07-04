@@ -29,6 +29,7 @@ public class SavingAccountTest {
                     3);
         });
     }
+
     @Test
     public void shouldAnExceptionMustBeThrownWhenInitialLessMin() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
@@ -39,6 +40,7 @@ public class SavingAccountTest {
                     3);
         });
     }
+
     @Test
     public void shouldAnExceptionMustBeThrownWhenInitialGreaterMax() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
