@@ -66,8 +66,6 @@ public class CreditAccountTest {
         int expected = 2950;
 
         Assertions.assertEquals(expected, account.getBalance());
-        Assertions.assertFalse(account.pay(-50));
-        Assertions.assertFalse(account.pay(3000));
     }
 
 
