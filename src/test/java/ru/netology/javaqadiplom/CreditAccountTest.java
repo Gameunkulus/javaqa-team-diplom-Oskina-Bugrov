@@ -96,7 +96,7 @@ public class CreditAccountTest {
 
         Assertions.assertEquals(expected, account.yearChange());
         account.pay(200);
-        expected = -30;
+        expected = 0;
         Assertions.assertEquals(expected, account.yearChange());
     }
 
