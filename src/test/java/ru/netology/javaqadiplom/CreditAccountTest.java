@@ -115,7 +115,7 @@ public class CreditAccountTest {
     }
 
     @Test
-    void getCreditLimitTest(){
+    void getCreditLimitTest() {
         CreditAccount account = new CreditAccount(
                 200,
                 5_000,
