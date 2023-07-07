@@ -20,7 +20,6 @@ public class CreditAccountTest {
 
     @Test
     public void IllegalArgumentExceptionTest() {
-        //проверка на выброс исключения при вводе отрицательных значенний у объекта
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             CreditAccount account = new CreditAccount(
                     -2_000,
@@ -28,6 +27,31 @@ public class CreditAccountTest {
                     -15
             );
         });
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            CreditAccount account = new CreditAccount(
+                    -2_000,
+                    5_000,
+                    15
+            );
+        });
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            CreditAccount account = new CreditAccount(
+                    2_000,
+                    -5_000,
+                    15
+            );
+        });
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            CreditAccount account = new CreditAccount(
+                    3_000,
+                    5_000,
+                    -15
+            );
+        });
+
     }
 
     @Test
